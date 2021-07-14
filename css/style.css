@@ -128,9 +128,7 @@
 }
 .player {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 15px;
-
-    
+    padding: 15px;   
 }
 .player img {
     width: 300px;
@@ -289,7 +287,7 @@ footer {
         margin-right: 0;
     }
     .news {
-        margin-left: 30px;
+        margin-left: 25px;
     }
     #half-width {
     margin-left: 50px;
@@ -299,6 +297,11 @@ footer {
     .org-img img {
         width: 100%;
         margin-left: -10px;
+    }
+    .organization-details p {
+        padding: 0px 15px;
+        text-align: left;
+        justify-content: right;
     }
     .video {
        display: none;
@@ -337,6 +340,7 @@ footer {
             width: 100%;
             margin-left: 250px;
             margin-bottom: 50px;
+            font-size: 36px;
         }
         .banner img {
             width: 100%;
@@ -373,11 +377,15 @@ footer {
         justify-content: center;
         width: 100%;
         }
+        .higlight-info {
+            padding-right: 15px;
+        }
         .org-img img {
             width: 100%;
             margin-left: -20px;
             height: 400px;
         }
+        
         .video {
            display: none;
            width: 0;
@@ -390,4 +398,3 @@ footer {
             height: 50px;
         }
     }
-}
