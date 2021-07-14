@@ -116,18 +116,20 @@
      margin-bottom: 50px;
      display: flex;
      justify-content: center;
+     width: 1044px;
  }
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
 
 }
 .player {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    margin-left: 30px;
     padding: 15px;
+
     
 }
 .player img {
@@ -230,17 +232,16 @@ footer {
 
 /* mobile devices */
 @media only screen and (max-width:688px) {
-  main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
     html,body{
     width: 100%;
      overflow-x: hidden; 
     }
-    header {
-        display: none;
+    nav {
+        visibility: hidden;
+    }
+    .section-title {
+        text-align: center;
+        margin-left: 0;
     }
     .home-container {
         width: 100%;
@@ -253,8 +254,16 @@ footer {
     }
     .text-button {
         width: 100%;
+        margin-left: 40px;
+        margin-bottom: 50px;
     }
     .banner img {
+        width: 100%;
+        margin-bottom: 61px;
+    }
+    .player-container {
+        margin-left: 0px;
+        margin-right: 0;
         width: 100%;
     }
     .players  {
@@ -262,7 +271,12 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
+    .player {
+    margin-left: 300px;
+    margin-right: 308px;
+    } 
     .highlights, .organization, .newses {
         display: flex;
         flex-direction: column;
@@ -270,14 +284,30 @@ footer {
         overflow-x: hidden;
         
     }
+    .top-news {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .news {
+        margin-left: 30px;
+    }
+    #half-width {
+    margin-left: 50px;
+    justify-content: center;
+    width: 100%;
+    }
     .org-img img {
-        width: 250px;
+        width: 100%;
+        margin-left: -10px;
     }
     .video {
        display: none;
     } 
     .social-icon {
         justify-content: center;
+    }
+    .footer-logo img{
+        height: 50px;
     }
 }
 
@@ -287,8 +317,12 @@ footer {
         width: 100%;
          overflow-x: hidden; 
         }
-        header {
-            display: none;
+        nav {
+            visibility: hidden;
+        }
+        .section-title {
+            text-align: center;
+            margin-left: 0;
         }
         .home-container {
             width: 100%;
@@ -301,28 +335,59 @@ footer {
         }
         .text-button {
             width: 100%;
+            margin-left: 250px;
+            margin-bottom: 50px;
         }
         .banner img {
             width: 100%;
+            margin-bottom: 61px;
+        }
+        .player-container {
+            margin-left: 0px;
+            margin-right: 0;
+            width: 100%;
         }
         .players  {
-            
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-        .section-title {
-            justify-content: center;
-        }
-       .newses {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+    
+        }
+        .player {
+            margin-left: 20px;
+            margin-right: 10px;
+            }
+        .highlights, .organization, .newses {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        .top-news {
+            margin-left: 0;
+        }
+        .news {
+            margin-left: 10px;
+            margin-right: -30px;
+        }
+        #half-width {
+        margin-left: 50px;
+        justify-content: center;
+        width: 100%;
         }
         .org-img img {
-            width: 400px;
+            width: 100%;
+            margin-left: -20px;
+            height: 400px;
         }
         .video {
-            display: none;
+           display: none;
+           width: 0;
+
+        } 
+        .social-icon {
+            justify-content: center;
         }
-        
+        .footer-logo img{
+            height: 50px;
+        }
+    }
 }
